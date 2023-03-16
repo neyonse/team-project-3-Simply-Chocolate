@@ -1,8 +1,6 @@
 /* Variables */
 
 :root {
-  font-family: 'Montserrat', sans-serif;
-
   --website-background-color: #fafafa;
   --pure-white-color: #ffffff;
   --main-color: #111111;
@@ -16,7 +14,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  letter-spacing: 0.02em;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 
   color: var(--text-main-color);
   background-color: var(--website-background-color);
