@@ -3,11 +3,11 @@
 :root {
   --background-main-color: #fafafa;
   --background-secondary-color: #ffffff;
-  --main-color: #111111;
-  --secondary-color: #1e1823;
-  --accent-color: #fd9222;
-  --accent-light-color: #fcf1e0;
+  --background-dark-color: #1e1823;
+  --text-main-color: #111111;
   --text-light-color: rgba(255, 255, 255, 0.7);
+  --accent-color: #fd9222;
+  --accent-hover-color: #fcf1e0;
 }
 
 /* Body basic style */
@@ -29,6 +29,7 @@ body {
 }
 
 .container {
+  max-width: 428px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -39,6 +40,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
+    max-width: 768px;
     padding: 0 32px;
   }
   .section {
@@ -47,9 +49,21 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
   .section {
     margin-bottom: 128px;
   }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 /* Hidden headers */
