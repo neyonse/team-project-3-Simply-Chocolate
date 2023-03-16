@@ -1,0 +1,86 @@
+/* ____Svitlana_____ */
+.header {
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--main-color);
+}
+.header-logo-select {
+  font-style: italic;
+}
+.header-nav-list {
+  display: flex;
+  gap: 24px;
+}
+.header-nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--main-color);
+}
+.header-soc-list {
+  display: flex;
+  gap: 18px;
+}
+.header-btn-ham {
+  padding: 0;
+  height: 28px;
+  width: 28px;
+  /* border: none;
+  background-color: transparent; */
+}
+@media screen and (max-width: 480px) {
+  .header-container {
+    max-width: 367px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 736px;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1168px;
+  }
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .header-btn-ham {
+    display: none;
+  }
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header-nav {
+    display: none;
+  }
+  .header-soc-list {
+    display: none;
+  }
+}
