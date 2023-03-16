@@ -1,12 +1,13 @@
 /* Variables */
 
 :root {
-  --website-background-color: #fafafa;
-  --pure-white-color: #ffffff;
+  --background-main-color: #fafafa;
+  --background-secondary-color: #ffffff;
   --main-color: #111111;
   --secondary-color: #1e1823;
   --accent-color: #fd9222;
-  --text-main-color: #000000;
+  --accent-light-color: #fcf1e0;
+  --text-light-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Body basic style */
@@ -18,7 +19,7 @@ body {
   letter-spacing: -0.02em;
 
   color: var(--text-main-color);
-  background-color: var(--website-background-color);
+  background-color: var(--background-main-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
