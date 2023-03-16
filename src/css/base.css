@@ -28,8 +28,27 @@ body {
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+  .section {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    margin-bottom: 128px;
+  }
 }
 
 /* Hidden headers */
