@@ -181,4 +181,23 @@
         padding-right: 40px;
         padding-bottom: 40px;
     }
+
+    .blocks .click-buy:hover {
+        color: var(--accent-color);
+        background: var(--accent-hover-color);
+    }
+
+    .blocks .scroll-section:hover {
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+
+    .blocks .scroll-down:hover {
+        background: var(--accent-color);
+        fill: var(--background-secondary-color);
+    }
+
+    .blocks .scroll-down:hover+.blocks .scroll-text {
+        color: var(--accent-color);
+    }
 }
