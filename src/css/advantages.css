@@ -1,5 +1,6 @@
-.advantages-container {
+.advantages-section {
   background-color: var(--background-dark-color);
+  margin-bottom: 72px;
 }
 .advantages-list {
   padding-top: 20px;
@@ -20,6 +21,7 @@
 }
 /* непідтягується змінна кольору */
 .advantages-title {
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
   color: #ffffff;
@@ -27,12 +29,16 @@
   padding-top: 22px;
 }
 .advantages-subtitle {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.22;
+  line-height: 1.21;
   color: rgba(255, 255, 255, 0.7);
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
+  .advantages-section {
+    margin-bottom: 100px;
+  }
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +55,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .advantages-section {
+    background-color: var(--background-dark-color);
+    margin-bottom: 128px;
+  }
   .advantages-list-item {
     width: calc((100% - 50px) / 3);
     position: relative;
