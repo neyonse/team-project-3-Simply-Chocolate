@@ -1,0 +1,364 @@
+@import url(../css/base.css);
+@import url(../css/reset.css);
+
+.buy-now-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-light-color);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.buy-now-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.buy-now-modal {
+  position: relative;
+  vertical-align: middle;
+  width: 311px;
+  max-width: 100%;
+  height: 1007px;
+  max-height: 100%;
+  background: var(--background-main-color);
+  border-radius: 15px;
+  padding: 32px 24px;
+  overflow-y: scroll;
+}
+.buy-now-modal::-webkit-scrollbar {
+  width: 3px;
+}
+
+.buy-now-modal::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+.buy-now-modal::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+.buy-now-btn-close {
+  background-color: inherit;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.buy-now-icon-close {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-main-color);
+}
+
+.buy-now-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+.buy-now-title-second {
+  color: var(--text-main-color);
+}
+.buy-now-modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+.buy-now-slider-text {
+  padding: 8px 29px;
+  white-space: nowrap;
+  width: 96px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--text-main-color);
+  background: inherit;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  margin-top: 16px;
+}
+.buy-now-label {
+  margin-bottom: 18px;
+}
+.buy-now-label-title {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: -0.02em;
+  color: var(--text-main-color);
+  margin-bottom: 8px;
+}
+.buy-now-label-input {
+  width: 263px;
+  max-width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  background-color: inherit;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+  color: var(--text-main-color);
+}
+.buy-now-label-input::placeholder {
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.buy-now-first {
+  margin-bottom: 14px;
+}
+.buy-now-phone-decor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -24%;
+  left: 18px;
+}
+.buy-now-label-phone-input {
+  position: relative;
+}
+.buy-now-label-phone-input > .buy-now-label-input-phone {
+  padding-left: 106px;
+}
+.buy-now-label-icon {
+  max-width: 24px;
+  max-height: 24px;
+}
+.buy-now-line {
+  width: 1.5px;
+  height: 25px;
+  max-height: 100%;
+  background-color: rgba(64, 64, 64, 0.3);
+  margin-left: 9px;
+}
+.buy-now-label-phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.214;
+  display: flex;
+
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-left: 8px;
+}
+.buy-now-label-input-cards {
+  position: relative;
+}
+.buy-now-icon-card {
+  width: 32px;
+  max-width: 100%;
+  height: 21px;
+
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+
+.buy-now-message {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 91px;
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  padding: 8px 16px;
+  color: var(--text-main-color);
+}
+.buy-now-message::placeholder {
+  font-size: 14px;
+  line-height: 1.214;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.buy-now-btn-submit {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  color: var(--background-secondary-color);
+  padding: 12px 28px;
+  width: 109px;
+  max-width: 100%;
+  background: var(--accent-color);
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .buy-now-image-container {
+    display: none;
+  }
+  .buy-now-slider-container {
+    width: 231px;
+    max-width: 100%;
+    padding: 32px 32px 32px 28px;
+    background: inherit;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 59px;
+    position: relative;
+    text-align: center;
+  }
+  .buy-now-slider-item {
+    width: 167px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* ====крапочки====== */
+  .buy-now-slider-container .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    position: absolute;
+    bottom: -28px;
+    transform: translate(50%);
+  }
+  .buy-now-slider-container .slick-dots li {
+    list-style: none;
+  }
+  /* Активная точка */
+  .buy-now-slider-container .slick-dots li.slick-active button {
+    width: 28px;
+    height: 13px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+  }
+  /* Элемент точки */
+  .buy-now-slider-container .slick-dots li button {
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+
+    background-color: rgba(17, 17, 17, 0.1);
+    border-radius: 50%;
+    border: none;
+  }
+
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+  }
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+  }
+
+  /* =========================================== */
+}
+
+@media screen and (min-width: 768px) {
+  .buy-now-modal {
+    width: 609px;
+    padding: 48px;
+    margin: 0 auto;
+    height: 1058px;
+  }
+  .buy-now-slider-container {
+    display: none;
+  }
+  .buy-now-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+  .buy-now-picture-container {
+    background: inherit;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    padding: 24px 20px 18px 20px;
+  }
+  .buy-now-label-title {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .buy-now-for-input {
+    display: flex;
+    gap: 21px;
+  }
+  .buy-now-label-input {
+    height: 66px;
+    max-height: 100%;
+    padding: 22px 24px;
+  }
+  .buy-now-first {
+    width: 246px;
+    max-width: 100%;
+  }
+  .buy-now-label-input-second {
+    width: 246px;
+    max-width: 100%;
+  }
+  .buy-now-label-input::placeholder {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .buy-now-label-phone-number {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .buy-now-label-input-three {
+    width: 513px;
+    max-width: 100%;
+  }
+  .buy-now-label-phone-input > .buy-now-label-input-phone {
+    padding-left: 177px;
+  }
+  .buy-now-label-icon {
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .buy-now-phone-decor {
+    top: -34%;
+    left: 24px;
+  }
+  .buy-now-line {
+    margin-left: 32px;
+  }
+  .buy-now-icon-card {
+    width: 44px;
+    height: 30px;
+    top: -8px;
+    right: 24px;
+  }
+  .buy-now-message::placeholder {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .buy-now-message {
+    padding: 22px 24px;
+    height: 137px;
+  }
+  .buy-now-btn-submit {
+    padding: 14px 40px;
+    width: 133px;
+  }
+}

@@ -1,0 +1,233 @@
+<div class="buy-now-backdrop is-open" data-modal>
+  <div class="buy-now-modal">
+    <button type="button" class="buy-now-btn-close" data-modal-close>
+      <svg class="buy-now-icon-close">
+        <use href="../img/icons.svg#close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now-title">
+      Buy <span class="buy-now-title-second">Now</span>
+    </h2>
+    <div class="buy-now-slider-container">
+      <div class="buy-now-slider">
+        <div class="buy-now-slider-item">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                /img/modal/modal-buy-now/chocolate-black@1x.webp 1x,
+                /img/modal/modal-buy-now/chocolate-black@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              src="/img/modal/modal-buy-now/chocolate-black.png"
+            />
+            <img
+              src="/img/modal/modal-buy-now/chocolate-black@1x.webp 1x"
+              alt="chocolate black"
+            />
+          </picture>
+          <p class="buy-now-slider-text">100 g</p>
+        </div>
+        <div class="slider-item">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                /img/modal/modal-buy-now/chocolate-white@1x.webp 1x,
+                /img/modal/modal-buy-now/chocolate-white@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              src="/img/modal/modal-buy-now/chocolate-milk.png"
+            />
+            <img
+              src="/img/modal/modal-buy-now/chocolate-white@1x.webp 1x"
+              alt="chocolate white"
+            />
+          </picture>
+          <p class="buy-now-slider-text">200 g</p>
+        </div>
+        <div class="slider-item">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                /img/modal/modal-buy-now/chocolate-milk@1x.webp 1x,
+                /img/modal/modal-buy-now/chocolate-milk@2x.webp 2x
+              "
+            />
+            <source
+              type="image/png"
+              src="/img/modal/modal-buy-now/chocolate-bar.png"
+            />
+            <img
+              src="/img/modal/modal-buy-now/chocolate-milk@1x.webp 1x"
+              alt="chocolate-milk"
+            />
+          </picture>
+          <p class="buy-now-slider-text">300 g</p>
+        </div>
+      </div>
+    </div>
+    <div class="buy-now-image-container">
+      <div class="buy-now-picture-container">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/modal/modal-buy-now/chocolate-black-tablet.webp    1x,
+              /img/modal/modal-buy-now/chocolate-black-tablet@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            src="/img/modal/modal-buy-now/cocolate-black.png"
+          />
+          <img
+            src="/img/modal/modal-buy-now/chocolate-white@1x.webp 1x"
+            alt="chocolate black"
+          />
+        </picture>
+        <p class="buy-now-slider-text">200 g</p>
+      </div>
+      <div class="buy-now-picture-container">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/modal/modal-buy-now/chocolate-white-tablet.webp    1x,
+              /img/modal/modal-buy-now/chocolate-white-tablet@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            src="/img/modal/modal-buy-now/cocolate-milk.png"
+          />
+          <img
+            src="/img/modal/modal-buy-now/chocolate-white@1x.webp 1x"
+            alt="chocolate white"
+          />
+        </picture>
+        <p class="buy-now-slider-text">200 g</p>
+      </div>
+      <div class="buy-now-picture-container">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /img/modal/modal-buy-now/chocolate-milk-tablet.webp    1x,
+              /img/modal/modal-buy-now/chocolate-milk-tablet@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            src="/img/modal/modal-buy-now/chocolate-bar.png"
+          />
+          <img
+            src="/img/modal/modal-buy-now/chocolate-milk@1x.webp 1x"
+            alt="chocolate milk"
+          />
+        </picture>
+        <p class="buy-now-slider-text">200 g</p>
+      </div>
+    </div>
+    <form class="buy-now-modal-form">
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Personal information</span>
+        <div class="buy-now-for-input">
+          <input
+            type="text"
+            name="user_name"
+            required
+            class="buy-now-label-input buy-now-first"
+            placeholder="Name"
+            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+            minlength="2"
+          />
+          <input
+            type="text"
+            name="user_surname"
+            required
+            class="buy-now-label-input buy-now-label-input-second"
+            placeholder="Surname"
+            pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+            minlength="2"
+          />
+        </div>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Email</span>
+        <input
+          type="email"
+          name="user_email"
+          required
+          class="buy-now-label-input buy-now-label-input-three"
+          placeholder="Enter your email"
+        />
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Phone number</span>
+        <span class="buy-now-label-phone-input"
+          ><input
+            type="tel"
+            name="user-phone"
+            required
+            pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+            title="xx-xxx-xx-xx"
+            class="buy-now-label-input buy-now-label-input-phone buy-now-label-input-three"
+            placeholder="Phone number"
+          />
+          <div class="buy-now-phone-decor">
+            <svg class="buy-now-label-icon">
+              <use href="../img/icons.svg#icon-uaflag"></use>
+            </svg>
+            <span class="buy-now-label-phone-number">+380</span>
+            <span class="buy-now-line"></span>
+          </div>
+        </span>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Card number</span>
+        <span class="buy-now-label-input-cards">
+          <input
+            type="number"
+            name="user-card"
+            required
+            pattern="^[0-9]{12}"
+            title="xxxxxxxxxxxxxxxx"
+            class="buy-now-label-input buy-now-label-input-cards buy-now-label-input-three"
+            placeholder="Enter card"
+          />
+          <svg class="buy-now-icon-card">
+            <use href="../img/icons.svg#icon-visa"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="buy-now-label">
+        <span class="buy-now-label-title">Comment</span>
+        <textarea
+          name="user_message"
+          placeholder="Enter text"
+          class="buy-now-message"
+        ></textarea>
+      </label>
+      <button type="submit" class="buy-now-btn-submit">Submit</button>
+    </form>
+  </div>
+</div>
+\
+<!-- ===========підключення jquery========= -->
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+></script>
+<!-- ==============js=================== -->
+<script type="text/javascript" src="../js/modal-buy-now.js"></script>
+<!-- ============slick js-================= -->
+<script type="text/javascript" src="../js/slick.min.js"></script>
+
+<script type="text/javascript" src="../js/modal.js"></script>
+
