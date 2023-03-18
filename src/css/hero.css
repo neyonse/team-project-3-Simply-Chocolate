@@ -3,9 +3,9 @@
     justify-content: center;
 }
 
-.hero .img-hero {
+.hero-img {
     display: block;
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/images/Header/header-chocolate-covered-mob-.jpg);
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-mob.jpg);
     max-width: 335px;
     width: 100%;
     border-radius: 30px;
@@ -16,19 +16,19 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero .img-hero {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-covered-cocoa-powder.jpg);
+    .hero .hero-img {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-mob@2x.jpg);
     }
 }
 
-.hero .blocks {
+.hero-blocks {
     padding-top: 395px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
 }
 
-.blocks .blocks-text {
+.hero-blocks-text {
     max-width: 290px;
     width: 100%;
     font-weight: 500;
@@ -40,7 +40,7 @@
     margin-bottom: 32px;
 }
 
-.blocks .btns {
+.hero-btnsscroll-btns {
     display: flex;
     gap: 14px;
     margin-bottom: 32px;
@@ -49,7 +49,7 @@
     line-height: 1.2;
 }
 
-.blocks .click-buy {
+.btnsscroll-btns-click-buy {
     padding: 12px 28px;
     border-radius: 100px;
     border: none;
@@ -57,30 +57,30 @@
     background: var(--accent-color);
 }
 
-.blocks .click-buy:focus {
+.btnsscroll-btns-click-buy:focus {
     color: var(--accent-color);
     background: var(--accent-hover-color);
 }
 
-.blocks .scroll-section {
+.btnsscroll-btns-section {
     color: var(--background-secondary-color);
     padding: 12px 28px;
     border: 1px solid var(--background-secondary-color);
     border-radius: 100px;
 }
 
-.blocks .scroll-section:focus {
+.btnsscroll-btns-section:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
-.blocks .scroll {
+.hero-btnsscroll-btn {
     display: flex;
-    gap: 12px;
+    gap: 14px;
     align-items: center;
 }
 
-.blocks .scroll-text {
+.btnsscroll-btn-scroll-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
@@ -88,7 +88,7 @@
     color: var(--background-secondary-color);
 }
 
-.blocks .scroll-down {
+.scroll-down-link {
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -99,18 +99,109 @@
     fill: var(--accent-color);
 }
 
-.blocks .scroll-down-icon {
+.scroll-down-link-icon {
     width: 16px;
     height: 16px;
 }
 
-.blocks .scroll-down:focus {
+.scroll-down-link:focus {
     background: var(--accent-color);
     fill: var(--background-secondary-color);
 }
 
-.blocks .scroll-down:focus~.blocks .scroll-text {
-    color: var(--accent-color);
+@media screen and (min-width: 768px) {
+    .hero .hero-img {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-tablet.jpg);
+        max-width: 704px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero .hero-img {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-tablet@2x.jpg);
+        }
+    }
+
+    .hero-blocks {
+        padding-top: 670px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero-blocks-text {
+        font-size: 28px;
+        line-height: 1.21;
+        max-width: 482px;
+    }
+
+    .hero-btnsscroll {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-btnsscroll-btns {
+        margin-bottom: 0;
+    }
+
+    .btnsscroll-btns-click-buy {
+        padding: 14px 40px;
+    }
+
+    .btnsscroll-btns-section {
+        padding: 14px 40px;
+    }
+
+    .btnsscroll-btn-scroll-text {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+
+    .scroll-down-link {
+        width: 38px;
+        height: 38px;
+    }
+
+    .scroll-down-link-icon {
+        width: 22px;
+        height: 22px;
+    }
 }
 
-@media screen {}
+@media screen and (min-width: 1200px) {
+    .hero .hero-img {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-desktop.jpg);
+        max-width: 1136px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero .hero-img {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-desktop@2x.jpg);
+        }
+    }
+
+    .hero-blocks {
+        padding-top: 380px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
+
+    .btnsscroll-btns-click-buy:hover {
+        color: var(--accent-color);
+        background: var(--accent-hover-color);
+    }
+
+    .btnsscroll-btns-section:hover {
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+
+    .scroll-down-link:hover {
+        background: var(--accent-color);
+        fill: var(--background-secondary-color);
+    }
+}

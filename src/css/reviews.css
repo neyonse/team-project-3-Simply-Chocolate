@@ -1,0 +1,155 @@
+.reviews h2 {
+    margin-bottom: 32px;
+}
+
+.reviews span {
+    color: var(--accent-color);
+}
+
+.item-reviews {
+    position: relative;
+    max-width: 335px;
+    max-height: 200px;
+    padding-top: 104px;
+    padding-bottom: 26px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 40px;
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    border-radius: 15px;
+    background-color: var(--background-secondary-color);
+}
+
+.item-reviews .position {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate( -50%, -42px);
+    width: 100%;
+}
+
+.item-reviews img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+.item-reviews h3 {
+    text-align: center;
+}
+
+.item-reviews p {
+    text-align: center;
+}
+
+
+/* BUTTON REVIEW */
+
+.button-review {
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding: 12px 28px;
+
+    font-weight: 600;
+    line-height: 1.21;
+    background-color: var(--background-secondary-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 100px;
+
+    transition: color var(--hover-transition),
+    background-color var(--hover-transition);
+}
+
+.button-review:hover,
+.button-review:focus {
+    color: var(--background-secondary-color);
+    background-color: var(--accent-color);
+}
+
+/* SWIPER */
+.container-reviews .swiper {
+  max-width: 335px;
+  height: 275px;
+}
+
+.container-reviews .swiper-pagination {
+    bottom: 0;
+    line-height: 0;
+}
+
+/* .container-reviews .swiper-pagination-bullet:nth-child(n + 5) {
+    display: none;
+} */
+
+.container-reviews .swiper-pagination-bullet{
+    width: 13px;
+    height: 13px;
+}
+
+.container-reviews .swiper-pagination-bullet-active {
+    width: 28px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+}
+
+
+
+
+/* _________ADAPTATION SECTION REVIEWS TABLET____________ */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .reviews h2 {
+        margin-bottom: 50px;
+    }
+
+    .container-reviews .swiper {
+        max-width: 704px;
+        height: 285px;
+    }
+
+    .button-review {
+        margin-top: 50px;
+    }
+
+    .item-reviews {
+        margin-right: 16px;
+        max-width: 344px;
+    }
+
+    .item-reviews:nth-child(2n) {
+        margin-right: 0;
+    }
+
+}
+
+
+/* _________ADAPTATION SECTION REVIEWS DESCTOP____________ */
+
+@media screen and (min-width: 1200px) {
+    .container-reviews .swiper {
+        max-width: 1136px;
+    }
+
+    .button-review {
+        margin-top: 50px;
+    }
+
+    .item-reviews {
+        margin-right: 28px;
+        max-width: 360px;
+    }
+
+    .item-reviews:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .container-reviews .swiper {
+        height: 285px;
+    }
+
+
+
+}

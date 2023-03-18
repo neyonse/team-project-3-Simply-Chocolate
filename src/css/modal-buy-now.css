@@ -1,7 +1,7 @@
-<<<<<<< Updated upstream
-=======
+
 @import url(../css/base.css);
 @import url(../css/reset.css);
+
 
 .buy-now-backdrop {
   display: flex;
@@ -14,15 +14,24 @@
   height: 100%;
   background-color: var(--text-light-color);
   z-index: 1000;
+
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 .buy-now-backdrop.is-hidden {
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
+.buy-now-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .buy-now-modal {
   position: relative;
   vertical-align: middle;
@@ -364,4 +373,3 @@
     width: 133px;
   }
 }
->>>>>>> Stashed changes
