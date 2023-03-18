@@ -186,6 +186,7 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   padding: 8px 16px;
   color: var(--text-main-color);
+  background-color: inherit;
 }
 .buy-now-message::placeholder {
   font-size: 14px;
@@ -222,8 +223,6 @@
     margin-bottom: 59px;
     position: relative;
     text-align: center;
-    overflow: hidden;
-    margin-bottom: 25px;
   }
   .buy-now-slider-item {
     width: 167px;
