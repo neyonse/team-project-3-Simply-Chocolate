@@ -50,9 +50,14 @@
   .advantage-list-item {
     width: calc((100% - 50px) / 3);
   }
+
   .advantage-list {
     flex-wrap: nowrap;
     gap: 70px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
- 
+  .advantages-subtitle {
+    padding-right: 0;
+  }
 }
