@@ -23,7 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/team-project-3-Simply-Chocolate/assets/index-56297e2d.js"></script>
-    <link rel="stylesheet" href="/team-project-3-Simply-Chocolate/assets/index-ae8e6aca.css">
+    <link rel="stylesheet" href="/team-project-3-Simply-Chocolate/assets/index-94d4f5f5.css">
   </head>
   <body>
     <!-- Svitlana -->
@@ -130,31 +130,41 @@
     <main>
       <!-- Loads the specified .html file -->
       <section class="section hero" id="hero">
-    <div class="container">
-        <h1 class="visually-hidden">Hero</h1>
-        <div class="hero-img">
-            <div class="hero-blocks">
-                <h2 class="hero-blocks-text">Treat yourself or a loved one to our finest ingredients for a moment of
-                    pure
-                    delight!</h2>
-                <div class="hero-btnsscroll">
-                    <div class="hero-btnsscroll-btns">
-                        <button type="button" class="btnsscroll-btns-click-buy" data-modal-open>Buy now</button>
-                        <a href="#how-its-made" class="btnsscroll-btns-section">How it's made</a>
-                    </div>
-                    <div class="hero-btnsscroll-btn">
-                        <p class="btnsscroll-btn-scroll-text">scroll down</p>
-                        <a href="#footer" class="scroll-down-link">
-                            <svg class="scroll-down-link-icon">
-                                <use href="/team-project-3-Simply-Chocolate/assets/icons-90b5a94b.svg#scroll"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <h1 class="visually-hidden">Hero</h1>
+    <div class="hero-img">
+      <div class="hero-blocks">
+        <h2 class="hero-blocks-text">
+          Treat yourself or a loved one to our finest ingredients for a moment
+          of pure delight!
+        </h2>
+        <div class="hero-btnsscroll">
+          <div class="hero-btnsscroll-btns">
+            <button
+              type="button"
+              class="btnsscroll-btns-click-buy js-open-menu-buy"
+              data-modal-open
+            >
+              Buy now
+            </button>
+            <a href="#how-its-made" class="btnsscroll-btns-section"
+              >How it's made</a
+            >
+          </div>
+          <div class="hero-btnsscroll-btn">
+            <p class="btnsscroll-btn-scroll-text">scroll down</p>
+            <a href="#footer" class="scroll-down-link">
+              <svg class="scroll-down-link-icon">
+                <use href="/team-project-3-Simply-Chocolate/assets/icons-90b5a94b.svg#scroll"></use>
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
+
       <!-- Advantages -->
 <section class="section">
   <div class="container advantages-container">
@@ -446,9 +456,9 @@
 
 
       <!-- MODAL WINDOWS -->
-      <div class="buy-now-backdrop is-hidden" data-modal>
+      <div class="buy-now-backdrop is-hidden js-buy-now">
   <div class="buy-now-modal">
-    <button type="button" class="buy-now-btn-close" data-modal-close>
+    <button type="button" class="buy-now-btn-close js-close-menu-buy">
       <svg class="buy-now-icon-close">
         <use href="/team-project-3-Simply-Chocolate/assets/icons-90b5a94b.svg#close-btn"></use>
       </svg>
@@ -682,5 +692,6 @@
     <script defer src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/buy-now.js"></script>
   </body>
 </html>
