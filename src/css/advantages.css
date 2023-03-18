@@ -1,9 +1,12 @@
 .advantages-container {
   background-color: var(--background-dark-color);
 }
-.advantage-list {
+.advantages-list {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.advantages-list-item {
+  padding-right: 28px;
 }
 
 .advantages-icon {
@@ -18,17 +21,16 @@
 /* непідтягується змінна кольору */
 .advantages-title {
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.22;
   color: #ffffff;
   padding-bottom: 18px;
   padding-top: 22px;
 }
 .advantages-subtitle {
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.22;
   color: rgba(255, 255, 255, 0.7);
   padding-bottom: 20px;
-  padding-right: 28px;
 }
 @media screen and (min-width: 768px) {
   .advantages-list {
@@ -49,16 +51,18 @@
 @media screen and (min-width: 1200px) {
   .advantages-list-item {
     width: calc((100% - 50px) / 3);
+    position: relative;
+    padding-right: 18px;
   }
   .advantages-list-item::after {
     content: '';
     width: 124px;
     height: 0px;
-    top: 50%;
-    right: -60px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     position: absolute;
     transform: rotate(90deg);
+    top: 50%;
+    right: -60px;
   }
   .advantages-list-item:last-child::after {
     display: none;
@@ -69,7 +73,7 @@
     padding-left: 18px;
     padding-right: 18px;
   }
-  .advantages-subtitle {
+  .advantages-list-item:last-child {
     padding-right: 0;
   }
 }
