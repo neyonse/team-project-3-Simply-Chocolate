@@ -222,6 +222,7 @@
     margin-bottom: 59px;
     position: relative;
     text-align: center;
+    overflow: hidden;
   }
   .buy-now-slider-item {
     width: 167px;
