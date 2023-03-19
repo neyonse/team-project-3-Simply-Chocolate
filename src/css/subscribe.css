@@ -36,7 +36,7 @@
 .subscribe-title {
     width: 291px;
     line-height: 1.2;
-    color: #FFFFFF;
+    color: var(--background-secondary-color);
     margin: auto;
 }
 .subscribe-text {
@@ -45,13 +45,13 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
     width: 326px;
-    color: #FFFFFF;
+    color: var(--background-secondary-color);
 }
 .subscribe-button {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: #FFFFFF;
+    color: var(--background-secondary-color);
     padding: 12px 28px;
     background: var(--accent-color);
     border-radius: 100px;
@@ -59,7 +59,7 @@
 .subscribe-button:hover,
 .subscribe-button:focus {
     color: var(--accent-color);
-    background: #FCF1E0;
+    background: var(--accent-hover-color);
 }
 /* ----------------------768------------------------------ */
 @media screen and (min-width: 768px) {
