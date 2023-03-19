@@ -53,12 +53,12 @@
     line-height: 1.21;
     color: #FFFFFF;
     padding: 12px 28px;
-    background: #FD9222;
+    background: var(--accent-color);
     border-radius: 100px;
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
-    color: #FD9222;
+    color: var(--accent-color);
     background: #FCF1E0;
 }
 /* ----------------------768------------------------------ */
