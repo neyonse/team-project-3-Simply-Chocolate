@@ -205,11 +205,17 @@
   background: var(--accent-color);
   border-radius: 100px;
 }
+.buy-now-btn-submit:hover,
+.buy-now-btn-submit:focus {
+  color: var(--accent-color);
+  background-color: var(--accent-hover-color);
+}
 
 @media screen and (max-width: 767px) {
   .buy-now-image-container {
     display: none;
   }
+
   .buy-now-slider-container {
     width: 231px;
     max-width: 100%;
@@ -280,6 +286,7 @@
     margin: 0 auto;
     height: 1058px;
   }
+
   .buy-now-slider-container {
     display: none;
   }
