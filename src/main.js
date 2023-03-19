@@ -1,8 +1,8 @@
-import './js/slick.min';
-import './js/modal-buy-now';
-import './js/buy-now';
-import './js/mobile-menu';
-import './js/swiper';
-import './js/modal-review';
-import './js/modal-subscribe';
-// import './js/modal';
+import './js/slick.min.js';
+import './js/modal-buy-now.js';
+import './js/buy-now.js';
+import './js/mobile-menu.js';
+import './js/swiper.js';
+import './js/modal-review.js';
+import './js/modal-subscribe.js';
+import './js/modal.js';
