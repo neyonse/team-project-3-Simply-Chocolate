@@ -36,6 +36,7 @@
   font-weight: 500;
   line-height: 1.14;
   color: var(--main-color);
+  transition: color var(--hover-transition);
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -51,8 +52,10 @@
 }
 
 .header-soc-icon {
+  display: block;
   stroke: var(--text-main-color);
-  fill: var(--background-secondary-color);
+  fill: var(--background-main-color);
+  transition: stroke var(--hover-transition);
 }
 .header-soc-link:hover .header-soc-icon,
 .header-soc-link:focus .header-soc-icon {
@@ -61,7 +64,6 @@
 
 .header-btn-ham {
   padding: 0;
-
   border: none;
   background-color: transparent;
 }
@@ -94,21 +96,17 @@
   .header-btn-ham-svg {
     display: none;
   }
-
   .header {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   .header-logo {
     font-size: 18px;
     line-height: 1.11;
   }
-
   .header-btn-ham {
     display: none;
   }
-
   .header-logo-svg-choc {
     width: 24px;
     height: 24px;
@@ -128,14 +126,13 @@
   visibility: hidden;
   pointer-events: none;
   transform: translate(100%);
-  transition: transform 1.5s;
+  transition: transform 1s, visibility 10s, opacity 5s;
   overflow-y: auto;
 }
 .header-modal-menu.is-open {
   opacity: 1;
   transform: translateZ(0);
-  transition: transform 1s;
-
+  transition: transform 1s, visibility 10s, opacity 250ms;
   visibility: visible;
   pointer-events: auto;
 }
@@ -158,7 +155,7 @@
   right: 20px;
   padding: 0;
   border: none;
-  background-color: transparent;
+  background-color: var(--background-dark-color);
   transition: transform var(--hover-transition), stroke var(--hover-transition);
 }
 .header-btn-close:hover .heder-close-icon,
@@ -170,7 +167,6 @@
   display: block;
   width: 28px;
   height: 28px;
-
   stroke: var(--background-secondary-color);
 }
 .header-nav-modal {
