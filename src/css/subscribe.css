@@ -55,6 +55,7 @@
     padding: 12px 28px;
     background: var(--accent-color);
     border-radius: 100px;
+    transition: color var(--hover-transition);
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
