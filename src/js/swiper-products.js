@@ -1,23 +1,23 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-products', {
   breakpoints: {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      slidesPerGroup:1,
+      slidesPerGroup: 1,
       spaceBetween: 18,
     },
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      slidesPerGroup:2,
-      spaceBetween: 18
+      slidesPerGroup: 2,
+      spaceBetween: 18,
     },
     // when window width is >= 1200px
     1200: {
       slidesPerView: 3,
-      slidesPerGroup:3,
-      spaceBetween: 18
-    }
+      slidesPerGroup: 3,
+      spaceBetween: 18,
+    },
   },
 
   // Optional parameters
@@ -27,7 +27,7 @@ const swiper = new Swiper('.swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,  
+    clickable: true,
   },
 
   // Navigation arrows
@@ -37,7 +37,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // }
 });

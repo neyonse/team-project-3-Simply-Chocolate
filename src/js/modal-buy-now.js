@@ -4,7 +4,7 @@ const swiper = new Swiper('.buy-now-slider-container', {
     // when window width is >= 320px
     320: {
       slidesPerView: 1,
-      slidesPerGroup:1,
+      slidesPerGroup: 1,
       spaceBetween: 16,
     },
   },
@@ -16,7 +16,7 @@ const swiper = new Swiper('.buy-now-slider-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,  
+    clickable: true,
   },
 
   // Navigation arrows
@@ -26,8 +26,7 @@ const swiper = new Swiper('.buy-now-slider-container', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 });
-
