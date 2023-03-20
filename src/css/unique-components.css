@@ -194,19 +194,19 @@
     max-width: 100%;
   }
   .components-list {
-    flex-direction: column;
-    gap: 30px;
-    width: 704px;
+    gap: 32px;
+
     max-width: 100%;
-    max-height: 572px;
   }
   .components-order-three {
     order: 4;
   }
   .components-order-four {
+    order: 2;
+  }
+  .components-order-two {
     order: 3;
   }
-
   .components-images {
     max-width: 224px;
     max-width: 100%;
