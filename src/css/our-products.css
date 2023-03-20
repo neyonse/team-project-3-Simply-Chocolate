@@ -1,76 +1,3 @@
-/* .h2 {
-  color: #fd9222;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-
-.products-title {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #111111;
-}
-
-.products-description {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: -0.02em;
-  color: rgba(17, 17, 17, 0.7);
-}
-
-.choco-unit {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 8px;
-  padding-left: 68px;
-  padding-right: 68px;
-  padding-bottom: 32px;
-}
-
-.products-list-item {
-  background: #ffffff;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 15px;
-  max-width: 375px;
-}
-
-.products-list {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-}
-
-.container-products .swiper {
-  max-width: 375px;
-  height:453px;
-}
-
-.img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.list {
-list-style: none;
-    padding-left: 0;
-    margin: 0;
-} */
-
 .products-main {
   font-weight: 600;
   font-size: 24px;
@@ -149,13 +76,9 @@ list-style: none;
   height: 397px;
 }
 
-/* .container-products .swiper-pagination {
+.container-products .swiper-pagination {
   bottom: 0;
   line-height: 0;
-} */
-
-.swiper-pagination-current:before{
-  content: "0"
 }
 
 .container-products .swiper-pagination-bullet {
@@ -182,40 +105,18 @@ list-style: none;
   }
 
   .products-list-item {
-    max-width: 335px;
-    max-height: 364px;
+    max-width: 270px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 32px;
-    margin-right: 18px;
-    max-width: 270px;
-  }
-
-  .products-list-item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .swiper-pagination {
-  /* margin-top: 100px; */
-  /* margin-bottom: 100px; */
   }
 }
-
 
 /* Adaptation Desktop */
 @media screen and (min-width:1200) {
   .container-products .swiper {
     max-width:1136px;
   }
-  .products-list-item:nth-child(4n) {
-    margin-right: 0;
-  }
-
-
-
-
-
-
 
 }
