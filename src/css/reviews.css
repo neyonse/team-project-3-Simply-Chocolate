@@ -80,10 +80,6 @@
     line-height: 0;
 }
 
-/* .container-reviews .swiper-pagination-bullet:nth-child(n + 5) {
-    display: none;
-} */
-
 .container-reviews .swiper-pagination-bullet{
     width: 13px;
     height: 13px;
@@ -96,11 +92,9 @@
 }
 
 
-
-
 /* _________ADAPTATION SECTION REVIEWS TABLET____________ */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .reviews h2 {
         margin-bottom: 50px;
     }
@@ -111,18 +105,14 @@
     }
 
     .button-review {
+        font-size: 18px;
+        padding: 14px 40px;
         margin-top: 50px;
     }
 
     .item-reviews {
-        margin-right: 16px;
         max-width: 344px;
     }
-
-    .item-reviews:nth-child(2n) {
-        margin-right: 0;
-    }
-
 }
 
 
@@ -133,23 +123,7 @@
         max-width: 1136px;
     }
 
-    .button-review {
-        margin-top: 50px;
-    }
-
     .item-reviews {
-        margin-right: 28px;
         max-width: 360px;
     }
-
-    .item-reviews:nth-child(3n) {
-        margin-right: 0;
-    }
-
-    .container-reviews .swiper {
-        height: 285px;
-    }
-
-
-
 }

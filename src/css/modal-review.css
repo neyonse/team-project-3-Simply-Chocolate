@@ -1,0 +1,105 @@
+.review-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-light-color);
+  background-color: rgba(46, 47, 66, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--hover-transition);
+}
+
+.review-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.review-modal {
+  position: relative;
+  vertical-align: middle;
+  width: 311px;
+  max-width: 100%;
+  max-height: 471px;
+  max-height: 100%;
+  transform: scale(0);
+  background: var(--background-main-color);
+  border-radius: 15px;
+  padding: 32px 24px;
+  overflow-y: auto;
+
+  transition: transform var(--hover-transition);
+}
+
+.review-backdrop.is-open .review-modal {
+  transform: scale(1);
+}
+
+.review-modal .buy-now-modal-form {
+  margin-bottom: 0;
+}
+
+.review-modal h2 {
+  line-height: 1.2;
+  text-align: left;
+  max-width: 255px;
+
+  margin-bottom: 32px;
+}
+
+.review-modal .buy-now-title-accent {
+  color: var(--accent-color);
+}
+
+.review-modal .buy-now-first {
+  margin-bottom: 0;
+}
+
+.review-modal .buy-now-label:nth-child(-n + 3) {
+  margin-bottom: 14px;
+}
+
+.buy-now-label:last-child {
+  margin-bottom: 0px;
+}
+
+/* ____________ADAPTIV REVIEW MODAL TABLET/DESCTOP_______________ */
+
+@media screen and (min-width: 768px) {
+  .review-modal {
+    width: 517px;
+    max-height: 631px;
+    padding: 40px;
+  }
+
+  .review-modal h2 {
+    max-width: 298px;
+    font-size: 24px;
+    line-height: 1.16;
+
+    margin-bottom: 40px;
+  }
+
+  .review-modal .buy-now-label-input {
+    font-size: 18px;
+  }
+
+  .review-modal .buy-now-message {
+    font-size: 18px;
+  }
+
+  .review-modal .buy-now-first {
+    width: 513px;
+  }
+
+  .review-modal .buy-now-label:nth-child(-n + 3) {
+    margin-bottom: 19px;
+  }
+}

@@ -1,14 +1,13 @@
 (() => {
-  const mobileMenu = document.querySelector('.js-buy-now');
-  const openMenuBtn = document.querySelector('.js-open-menu-buy');
-  const closeMenuBtn = document.querySelector('.js-close-menu-buy');
+  const mobileMenu = document.querySelector('.js-thank');
+  const openMenuBtn = document.querySelector('.js-open-modal-thank');
+  const closeMenuBtn = document.querySelector('.js-close-modal-thank');
 
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
-    document.body.classList.toggle('no-scroll');
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
