@@ -1,5 +1,8 @@
 /* Svitlana  */
 .modal-feedback-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,17 +20,16 @@
 
 .modal-feedback-container {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  vertical-align: middle;
   width: 311px;
   max-height: 350px;
   padding: 84px 24px 178px 58px;
   border-radius: 15px;
   background-color: var(--accent-color);
-  background-image: url(/img/modal/modal-thank-you/chocolate-mobil.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(/img/modal/modal-thank-you/chocolate-mobil.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: 276px;
 }
 .modal-feedback-backdrop.is-open {
   opacity: 1;
@@ -38,10 +40,10 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .modal-feedback-container {
-    background-image: url(/img/modal/modal-thank-you/chocolate-mobil@2x.jpg);
+    background-image: url(/img/modal/modal-thank-you/chocolate-mobil@2x.png);
   }
 }
-.modal-thank-close-btn {
+/* .modal-thank-close-btn {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -54,20 +56,20 @@
   padding: 0;
   border-radius: 50%;
   border: none;
-}
-.modal-thank-icon {
+} */
+/* .modal-thank-icon {
   display: block;
   width: 16px;
   height: 16px;
   stroke: #d44528;
-}
-.modal-thank-title {
+} */
+/* .modal-thank-title {
   text-align: start;
   margin-bottom: 8px;
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--accent-hover-color);
-}
+} */
 .modal-feedback-text {
   max-width: 198px;
   line-height: 1.14;
@@ -79,41 +81,43 @@
     width: 516px;
     max-height: 414px;
     padding: 163px 47px 163px 170px;
-    background-image: url(/img/modal/modal-thank-you/chocolate-desktop.jpg);
+    background-image: url(/img/modal/modal-thank-you/chocolate-tablet.png);
+    background-size: 282px;
   }
-  .modal-thank-title {
+  /* .modal-thank-title {
     font-size: 24px;
     line-height: 1.17;
-  }
-  .modal-thank-text {
+  } */
+  /* .modal-thank-text {
     font-size: 18px;
     line-height: 1.33;
-  }
-  .modal-thank-close-btn {
+  } */
+  /* .modal-thank-close-btn {
     top: 24px;
     right: 24px;
     width: 40px;
     height: 40px;
-  }
-  .modal-thank-icon {
+  } */
+  /* .modal-thank-icon {
     width: 22px;
     height: 22px;
-  }
-  .modal-thank-select {
+  } */
+  /* .modal-thank-select {
     font-size: 24px;
     line-height: 1;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .modal-feedback-container {
-    background-image: url(/img/modal/modal-thank-you/chocolate-tablet@2x.jpg);
-  }
+  } */
   .modal-feedback-text {
     max-width: 299px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.33;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .modal-feedback-container {
+      background-image: url(/img/modal/modal-thank-you/chocolate-tablet@2x.png);
+    }
   }
 }

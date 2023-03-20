@@ -23,15 +23,13 @@
 }
 
 .modal-subscribe {
-  position: absolute;
+  position: relative;
+  vertical-align: middle;
   max-width: 311px;
-  width: 100%;
+  max-width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: scale(0);
   border-radius: 15px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,7 +38,7 @@
 }
 
 .subscribe-backdrop.is-open .modal-subscribe {
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
 }
 
 .modal-subscribe-close-button {
