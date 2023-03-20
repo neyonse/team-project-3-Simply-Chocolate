@@ -353,8 +353,9 @@
     max-height: 32px;
   }
   .buy-now-phone-decor {
-    top: -34%;
+    top: 50%;
     left: 24px;
+    transform: translateY(-50%);
   }
   .buy-now-phone-decor::after {
     margin-left: 32px;
@@ -362,8 +363,9 @@
   .buy-now-icon-card {
     width: 44px;
     height: 30px;
-    top: -8px;
+    top: 50%;
     right: 24px;
+    transform: translateY(-50%);
   }
   .buy-now-message::placeholder {
     font-size: 18px;
