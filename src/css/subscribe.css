@@ -1,7 +1,7 @@
 .subscribe {
     padding-top: 62px;
     padding-bottom: 62px;
-    margin: auto;
+    margin: 0px;
     background-image: linear-gradient(
         to right, 
         rgba(0, 0, 0, 0.2),
@@ -10,6 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -22,7 +23,6 @@
         url(../img/subscribe/Subcribe-mob-2x.jpg);
       }
   }
-
 .container-subscribe {
     text-align: center;
     align-items: center;
@@ -55,7 +55,7 @@
     padding: 12px 28px;
     background: var(--accent-color);
     border-radius: 100px;
-    transition: color var(--hover-transition);
+    transition: var(--hover-transition);
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
@@ -65,7 +65,7 @@
 /* ----------------------768------------------------------ */
 @media screen and (min-width: 768px) {
     .subscribe {
-        max-width: 768px;
+        min-width: 768px;
         padding-top: 72px;
         padding-bottom: 72px;
     }
@@ -78,6 +78,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100%;
     }
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -118,6 +119,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100%;
     }
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
