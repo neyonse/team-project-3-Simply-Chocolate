@@ -1,7 +1,7 @@
-import './js/how-its-made';
+// import './js/how-its-made';
 
-import './js/modal-buy-now';
-import './js/slick.min';
+// import './js/modal-buy-now';
+// import './js/slick.min';
 
 import './js/buy-now';
 import './js/modal-review';
