@@ -1,5 +1,3 @@
-// import './js/how-its-made';
-
 // import './js/modal-buy-now';
 // import './js/slick.min';
 
@@ -11,3 +9,5 @@ import './js/modal-thanks';
 import './js/modal-feedback';
 
 import './js/swiper';
+
+import './js/how-its-made';
