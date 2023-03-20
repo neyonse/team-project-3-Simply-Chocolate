@@ -1,0 +1,147 @@
+.footer {
+  padding: 50px 0;
+
+  background-color: var(--background-dark-color);
+  color: var(--background-secondary-color);
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.footer-heading {
+  max-width: 300px;
+
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: none;
+}
+
+.footer-heading span {
+  color: var(--accent-color);
+}
+
+.footer-top-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-address {
+  max-width: 164px;
+  font-style: normal;
+}
+
+.footer-address-title {
+  margin-bottom: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.footer-address-item {
+  margin-bottom: 4px;
+}
+
+.footer-address-link {
+  transition: color var(--hover-transition);
+}
+
+.footer-address-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.footer-bottom::before {
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  bottom: 32px;
+  position: relative;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-soc-item {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-soc-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: var(--background-secondary-color);
+  transition: color var(--hover-transition);
+}
+
+.footer-soc-icon {
+  fill: transparent;
+  stroke: currentColor;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-nav-link {
+  display: block;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--main-color);
+  transition: color var(--hover-transition);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 74px;
+  }
+  .footer-top-wrap {
+    gap: 50px;
+  }
+  .footer-heading {
+    margin-bottom: 0;
+
+    font-size: 28px;
+    line-height: 1.21;
+  }
+  .footer-soc-item {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-bottom::before {
+    bottom: 24px;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-top {
+    margin-bottom: 86px;
+  }
+  .footer-top-wrap {
+    gap: 64px;
+  }
+}

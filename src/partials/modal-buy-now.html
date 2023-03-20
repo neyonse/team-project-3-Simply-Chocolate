@@ -1,6 +1,6 @@
-<div class="buy-now-backdrop is-hidden" data-modal>
+<div class="buy-now-backdrop is-hidden js-buy-now">
   <div class="buy-now-modal">
-    <button type="button" class="buy-now-btn-close" data-modal-close>
+    <button type="button" class="buy-now-btn-close js-close-menu-buy">
       <svg class="buy-now-icon-close">
         <use href="/img/icons.svg#close-btn"></use>
       </svg>
@@ -8,15 +8,15 @@
     <h2 class="buy-now-title">
       Buy <span class="buy-now-title-second">Now</span>
     </h2>
-    <div class="buy-now-slider-container">
-      <div class="buy-now-slider">
-        <div class="buy-now-slider-item">
+    <div class="buy-now-slider-container swiper-container">
+      <ul class="buy-now-slider swiper-wrapper">
+        <li class="buy-now-slider-item swiper-slide">
           <picture>
             <source
               type="image/webp"
               srcset="
-                /img/modal/modal-buy-now/chocolate-black@1x.webp 1x,
-                /img/modal/modal-buy-now/chocolate-black@2x.webp 2x
+                /img/modal/modal-buy-now/black.webp   1x,
+                /img/modal/modal-buy-now/black2x.webp 2x
               "
             />
             <source
@@ -24,13 +24,13 @@
               src="/img/modal/modal-buy-now/chocolate-black.png"
             />
             <img
-              src="/img/modal/modal-buy-now/chocolate-black@1x.webp 1x"
+              src="/img/modal/modal-buy-now/black.webp 1x"
               alt="chocolate black"
             />
           </picture>
           <p class="buy-now-slider-text">100 g</p>
-        </div>
-        <div class="slider-item">
+        </li>
+        <li class="buy-now-slider-item swiper-slide">
           <picture>
             <source
               type="image/webp"
@@ -49,8 +49,8 @@
             />
           </picture>
           <p class="buy-now-slider-text">200 g</p>
-        </div>
-        <div class="slider-item">
+        </li>
+        <li class="buy-now-slider-item swiper-slide">
           <picture>
             <source
               type="image/webp"
@@ -69,8 +69,11 @@
             />
           </picture>
           <p class="buy-now-slider-text">300 g</p>
-        </div>
-      </div>
+        </li>
+      </ul>
+      <div class="buy-now-swiper-pagination"></div>
+    </div>
+
     </div>
     <div class="buy-now-image-container">
       <div class="buy-now-picture-container">
@@ -185,7 +188,7 @@
               <use href="/img/icons.svg#ua-flag"></use>
             </svg>
             <span class="buy-now-label-phone-number">+380</span>
-            <span class="buy-now-line"></span>
+            <!-- <span class="buy-now-line"></span> -->
           </div>
         </span>
       </label>
@@ -214,19 +217,15 @@
           class="buy-now-message"
         ></textarea>
       </label>
-      <button type="submit" class="buy-now-btn-submit">Submit</button>
+      <button
+        type="submit"
+        class="buy-now-btn-submit js-open-modal-thank"
+        data-modal-open
+      >
+        Submit
+      </button>
     </form>
   </div>
 </div>
-\
-<!-- ===========підключення jquery========= -->
-<script
-  type="text/javascript"
-  src="https://code.jquery.com/jquery-3.6.4.min.js"
-></script>
-<!-- ==============js=================== -->
-<script type="text/javascript" src="../js/modal-buy-now.js"></script>
-<!-- ============slick js-================= -->
-<script type="text/javascript" src="../js/slick.min.js"></script>
-
-<script type="text/javascript" src="../js/modal.js"></script>
+ <!-- ======================= -->
+  
