@@ -92,8 +92,6 @@
 }
 
 
-
-
 /* _________ADAPTATION SECTION REVIEWS TABLET____________ */
 
 @media screen and (min-width: 768px) {
@@ -107,6 +105,8 @@
     }
 
     .button-review {
+        font-size: 18px;
+        padding: 14px 40px;
         margin-top: 50px;
     }
 
@@ -126,5 +126,4 @@
     .item-reviews {
         max-width: 360px;
     }
-
 }
