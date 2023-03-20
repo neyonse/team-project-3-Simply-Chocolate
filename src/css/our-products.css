@@ -86,7 +86,6 @@ list-style: none;
 }
 
 .products-list-item {
-  position: relative;
   max-width: 335px;
   max-height: 364px;
   padding-top: 32px;
@@ -99,18 +98,12 @@ list-style: none;
   border-radius: 15px;
 }
 
-.item-reviews .position {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -42px);
-  width: 100%;
-}
-
 .products img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
+  width: 100%;
+  height: auto;
 }
 
 .products .choco-unit {
@@ -156,14 +149,14 @@ list-style: none;
   height: 397px;
 }
 
-.container-products .swiper-pagination {
+/* .container-products .swiper-pagination {
   bottom: 0;
   line-height: 0;
-}
-
-/* .container-reviews .swiper-pagination-bullet:nth-child(n + 5) {
-    display: none;
 } */
+
+.swiper-pagination-current:before{
+  content: "0"
+}
 
 .container-products .swiper-pagination-bullet {
   width: 13px;
@@ -176,9 +169,7 @@ list-style: none;
   background-color: var(--accent-color);
 }
 
-/* Adaptation  */
-
-/* _________ADAPTATION SECTION REVIEWS TABLET____________ */
+/* Adaptation Tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .products h2 {
@@ -202,7 +193,29 @@ list-style: none;
     max-width: 270px;
   }
 
-  .item-products:nth-child(2n) {
+  .products-list-item:nth-child(2n) {
     margin-right: 0;
   }
+  .swiper-pagination {
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  }
+}
+
+
+/* Adaptation Desktop */
+@media screen and (min-width:1200) {
+  .container-products .swiper {
+    max-width:1136px;
+  }
+  .products-list-item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+
+
+
+
+
+
 }
