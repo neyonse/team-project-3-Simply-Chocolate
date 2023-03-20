@@ -5,6 +5,6 @@ import './js/modal-subscribe';
 import './js/modal-thanks';
 import './js/modal-feedback';
 // import './js/how-its-made.js';
-import './js/slick.min';
-import './js/modal-buy-now';
 import './js/swiper';
+import './js/slick.min';
+// import './js/modal-buy-now';
