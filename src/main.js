@@ -1,4 +1,4 @@
-import './js/buy-now.js';
+import './js/buy-now';
 // import './js/swiper.js';
 // import './js/slick.min.js';
 // import './js/modal-buy-now.js';
