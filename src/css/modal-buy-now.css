@@ -33,17 +33,7 @@
   transform: scale(0);
   transition: transform var(--hover-transition);
 }
-.buy-now-modal::-webkit-scrollbar {
-  width: 3px;
-}
 
-.buy-now-modal::-webkit-scrollbar-track {
-  background-color: inherit;
-}
-.buy-now-modal::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
 .buy-now-btn-close {
   background-color: inherit;
   border: none;
