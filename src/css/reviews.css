@@ -37,6 +37,7 @@
 }
 
 .item-reviews h3 {
+    font-size: 18px;
     text-align: center;
 }
 
@@ -96,6 +97,7 @@
 
 @media screen and (min-width: 768px) {
     .reviews h2 {
+        font-size: 24px;
         margin-bottom: 50px;
     }
 
