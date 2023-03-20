@@ -87,7 +87,7 @@
   font-size: 14px;
   line-height: 1.214;
   color: var(--text-main-color);
-  background: inherit;
+  background: var(--background-main-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   margin-top: 16px;
@@ -308,7 +308,7 @@
     gap: 16px;
   }
   .buy-now-picture-container {
-    background: inherit;
+    background: var(--background-secondary-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     padding: 24px 20px 18px 20px;
