@@ -21,13 +21,13 @@ const swiper = new Swiper('.buy-now-slider-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.buy-now-swiper-button-next',
-    prevEl: '.buy-now-swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   // And if we need scrollbar
   scrollbar: {
-    el: '.buy-now-swiper-scrollbar',
+    el: '.swiper-scrollbar',
   },
 });
 
