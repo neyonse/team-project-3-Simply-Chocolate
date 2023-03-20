@@ -15,19 +15,19 @@ const swiper = new Swiper('.buy-now-slider-container', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.buy-now-swiper-pagination',
     clickable: true,  
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.buy-now-swiper-button-next',
+    prevEl: '.buy-now-swiper-button-prev',
   },
 
   // And if we need scrollbar
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: '.buy-now-swiper-scrollbar',
   },
 });
 
