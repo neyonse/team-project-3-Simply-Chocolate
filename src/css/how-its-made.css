@@ -28,6 +28,7 @@
     padding-left: 0;
 }
 .how-text-list {
+    position: relative;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -36,6 +37,17 @@
     margin-top: 18px;
     margin-left: 16px;
 }
+.how-text-list::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+  }
 .video-container{
     margin-top: 32px;
     position: relative;
@@ -82,6 +94,10 @@
     max-width: 768px;
     padding: 0 77px 100px 77px;
     } 
+    .how-titel{
+        font-size: 24px;
+        line-height: 1.17;
+    }
     .how-box{
         max-width: 614px;
         padding: 32px;
