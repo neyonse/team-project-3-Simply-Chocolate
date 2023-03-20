@@ -1,0 +1,122 @@
+.products-main {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-main-color);
+}
+
+.products-mainsecond {
+  color: var(--accent-color);
+}
+
+.products-list-item {
+  max-width: 335px;
+  max-height: 364px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 53px;
+  padding-right: 52px;
+  margin-top: 32px;
+  background: var(--background-secondary-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.products img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.products .choco-unit {
+}
+
+.products-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--text-main-color);
+  text-align: center;
+}
+.products-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.btn-price {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-main-color);
+  width: 94px;
+  height: 33px;
+  background: var(--background-secondary-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  text-align: center;
+}
+
+/* SWIPER */
+.container-products .swiper {
+  max-width: 335px;
+  height: 397px;
+}
+
+.container-products .swiper-pagination {
+  bottom: 0;
+  line-height: 0;
+}
+
+.container-products .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+}
+
+.container-products .swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+}
+
+/* Adaptation Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products h2 {
+    margin-bottom: 50px;
+  }
+
+  .container-products .swiper {
+    max-width: 704px;
+    height: 409px;
+  }
+
+  .products-list-item {
+    max-width: 270px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Adaptation Desktop */
+@media screen and (min-width:1200) {
+  .container-products .swiper {
+    max-width:1136px;
+  }
+
+}
