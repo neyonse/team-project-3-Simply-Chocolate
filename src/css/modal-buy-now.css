@@ -144,13 +144,13 @@
   max-width: 24px;
   max-height: 24px;
 }
-.buy-now-line {
+/* .buy-now-line {
   width: 1.5px;
   height: 25px;
   max-height: 100%;
   background-color: rgba(64, 64, 64, 0.3);
   margin-left: 9px;
-}
+} */
 .buy-now-label-phone-number {
   font-weight: 500;
   font-size: 14px;
@@ -160,6 +160,14 @@
   letter-spacing: -0.02em;
   color: #000000;
   margin-left: 8px;
+}
+.buy-now-phone-decor::after {
+  content: '';
+  width: 1.5px;
+  height: 25px;
+  max-height: 100%;
+  background-color: rgba(64, 64, 64, 0.3);
+  margin-left: 9px;
 }
 .buy-now-label-input-cards {
   position: relative;
@@ -345,17 +353,19 @@
     max-height: 32px;
   }
   .buy-now-phone-decor {
-    top: -34%;
+    top: 50%;
     left: 24px;
+    transform: translateY(-50%);
   }
-  .buy-now-line {
+  .buy-now-phone-decor::after {
     margin-left: 32px;
   }
   .buy-now-icon-card {
     width: 44px;
     height: 30px;
-    top: -8px;
+    top: 50%;
     right: 24px;
+    transform: translateY(-50%);
   }
   .buy-now-message::placeholder {
     font-size: 18px;
