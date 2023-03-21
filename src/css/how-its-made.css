@@ -80,13 +80,11 @@
   transform: translate(-50%, -50%) scale(1);
   width: 35px;
   height: 35px;
+  padding: 9px 7px 8px 12px;
   z-index: 3;
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid var(--background-secondary-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .how-container {
@@ -119,6 +117,7 @@
   .how-btm {
     width: 44px;
     height: 44px;
+    padding: 11px 9px 11px 14px;
   }
 }
 
