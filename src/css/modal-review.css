@@ -42,16 +42,16 @@
   transform: scale(1);
 }
 
-.review-modal .buy-now-modal-form {
-  margin-bottom: 0;
+.review-modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
 }
 
 .review-modal h2 {
   line-height: 1.2;
   text-align: left;
   max-width: 230px;
-
-  margin-bottom: 32px;
 }
 
 .review-modal .buy-now-title-accent {
@@ -83,8 +83,10 @@
     max-width: 298px;
     font-size: 24px;
     line-height: 1.16;
+  }
 
-    margin-bottom: 40px;
+  .review-modal-form {
+    margin-top: 40px;
   }
 
   .review-modal .buy-now-label-input {
