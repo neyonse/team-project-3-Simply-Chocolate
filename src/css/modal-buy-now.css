@@ -223,7 +223,12 @@
     margin-bottom: 14px;
     overflow: hidden;
   }
-
+  .buy-now-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
   .buy-now-slider .slick-track {
     width: 100%;
     display: flex;
