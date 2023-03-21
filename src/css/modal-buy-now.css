@@ -299,13 +299,11 @@
     max-height: 100%;
     padding: 22px 24px;
     font-size: 18px;
-
   }
   .buy-now-inputs {
     display: flex;
     margin-bottom: 18px;
     gap: 21px;
-
   }
   .buy-now-first {
     width: 246px;

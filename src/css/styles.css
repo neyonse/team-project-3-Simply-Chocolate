@@ -6,7 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./scrollbar-custom');
+@import url('./scrollbar-custom.css');
 @import url('./slick-slider.css');
 @import url('./header.css');
 @import url('./hero.css');

@@ -13,10 +13,6 @@
   color: var(--accent-color);
 }
 
-.top-sellers-img source {
-  border-radius: 15px;
-}
-
 .top-sellers-btn {
   display: block;
   margin: 20px auto;
