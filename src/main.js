@@ -10,6 +10,6 @@ import './js/modal-feedback';
 import './js/swiper';
 import './js/swiper-products';
 
-// import './js/how-its-made';
-
 import './js/modal-buy-now';
+
+// import './js/how-its-made';
