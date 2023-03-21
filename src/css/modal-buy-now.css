@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--text-light-color);
+  overflow: auto;
   background-color: rgba(46, 47, 66, 0.7);
   z-index: 1000;
   opacity: 0;
@@ -24,16 +24,15 @@
 .buy-now-modal {
   position: relative;
   margin: 0 auto;
-
+  width: 311px;
   max-width: 100%;
+  height: 1019px;
   background: var(--background-main-color);
   border-radius: 15px;
   padding: 32px 24px;
-  overflow-y: scroll;
   transform: scale(0);
   transition: transform var(--hover-transition);
 }
-
 .buy-now-btn-close {
   background-color: inherit;
   border: none;
@@ -51,7 +50,6 @@
   height: 24px;
   stroke: var(--text-main-color);
 }
-
 .buy-now-title {
   font-weight: 600;
   font-size: 20px;
@@ -66,17 +64,22 @@
 .buy-now-title-second {
   color: var(--text-main-color);
 }
-.buy-now-modal-form {
-  display: flex;
-  flex-direction: column;
+
+.buy-now-product {
+  width: 231px;
+  padding: 32px 32px 28px;
+  text-align: center;
+  background-color: var(--background-secondary-color);
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
 }
-.buy-now-slider-text {
+
+.buy-now-item-text {
   padding: 8px 29px;
   white-space: nowrap;
   width: 96px;
   margin: 0 auto;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.214;
   color: var(--text-main-color);
   background: var(--background-main-color);
@@ -84,20 +87,14 @@
   border-radius: 100px;
   margin-top: 16px;
 }
+
+.buy-now-modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
 .buy-now-label {
   margin-bottom: 18px;
-}
-.buy-now-slider {
-  height: fit-content;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property: transform;
-  transition-timing-function: var(
-    --swiper-wrapper-transition-timing-function,
-    initial
-  );
-  box-sizing: content-box;
 }
 .buy-now-label-title {
   display: block;
@@ -125,7 +122,9 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
-
+.buy-now-first {
+  margin-bottom: 14px;
+}
 .buy-now-phone-decor {
   display: flex;
   flex-direction: row;
@@ -145,7 +144,6 @@
   max-width: 24px;
   max-height: 24px;
 }
-
 .buy-now-label-phone-number {
   font-weight: 500;
   font-size: 14px;
@@ -176,7 +174,6 @@
   top: 0;
   right: 14px;
 }
-
 .buy-now-message {
   display: block;
   resize: none;
@@ -218,72 +215,69 @@
     background-color var(--hover-transition);
 }
 
+/* Mobile Slider styles */
 @media screen and (max-width: 767px) {
-  .buy-now-image-container {
-    display: none;
-  }
-  .buy-now-modal {
-    width: 311px;
-    height: 1007px;
-  }
-  .buy-now-slider-container {
+  .buy-now-slider {
     width: 231px;
-    max-width: 100%;
-    max-height: 100%;
-
-    background: var(--background-secondary-color);
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    border-radius: 15px;
     margin: 0 auto;
-    margin-bottom: 59px;
-    position: relative;
-    text-align: center;
+  }
+
+  .buy-now-slider .slick-list {
+    margin-bottom: 14px;
     overflow: hidden;
   }
-  .buy-now-first {
-    margin-bottom: 14px;
+
+  .buy-now-slider .slick-track {
+    width: 100%;
+    display: flex;
+    gap: 16px;
   }
-  .buy-now-slider-item {
-    padding: 32px 32px 32px 28px;
-    max-width: 100%;
-    max-height: 100%;
+
+  .buy-now-slider .slick-dots {
+    width: 106px;
+  }
+
+  .buy-now-image-container {
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .buy-now-slider {
+    display: none;
+  }
+
   .buy-now-modal {
-    max-width: 609px;
-    height: 1058px;
+    width: 609px;
     padding: 48px;
     margin: 0 auto;
     height: 1058px;
-    max-height: 100%;
-    overflow-y: scroll;
   }
-  .buy-now-first {
-    margin-bottom: 14px;
-  }
-  .tablet-image {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 40px;
-    gap: 16px;
-  }
-  .buy-now-slider-container {
-    display: none;
-  }
+
   .buy-now-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+    gap: 16px;
   }
+
   .buy-now-picture-container {
-    background: var(--background-secondary-color);
+    background: inherit;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     padding: 24px 20px 18px 20px;
   }
+
+  .buy-now-product {
+    width: 160px;
+    padding: 20px 24px 18px;
+  }
+
+  .buy-now-item-text {
+    margin-top: 14px;
+  }
+
   .buy-now-label-title {
     font-size: 14px;
     line-height: 1.28;
@@ -296,11 +290,12 @@
     height: 66px;
     max-height: 100%;
     padding: 22px 24px;
-    font-size: 18px;
+    font-size: 1;
   }
   .buy-now-first {
     width: 246px;
     max-width: 100%;
+    margin-bottom: 0;
   }
   .buy-now-label-input-second {
     width: 246px;
