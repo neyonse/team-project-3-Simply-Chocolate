@@ -1,5 +1,6 @@
 import './js/mobile-menu';
 import './js/buy-now';
+import './js/buy-now-top-sellers';
 import './js/modal-review';
 import './js/modal-subscribe';
 import './js/modal-thanks';
