@@ -224,6 +224,7 @@
   }
   .buy-now-modal {
     width: 311px;
+    height: 1007px;
   }
   .buy-now-slider-container {
     width: 231px;
@@ -252,7 +253,7 @@
 @media screen and (min-width: 768px) {
   .buy-now-modal {
     max-width: 609px;
-
+    height: 1058px;
     padding: 48px;
     margin: 0 auto;
     height: 1058px;
@@ -276,7 +277,7 @@
     align-items: center;
   }
   .buy-now-picture-container {
-    background: inherit;
+    background: var(--background-secondary-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
     padding: 24px 20px 18px 20px;
