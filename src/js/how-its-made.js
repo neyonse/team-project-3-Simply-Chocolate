@@ -5,7 +5,8 @@ function playVideo() {
   var iframe = document.createElement('iframe');
   iframe.setAttribute(
     'src',
-    'https://www.youtube.com/embed/8MEd5muwtX4?autoplay=1'
+    // 'https://www.youtube.com/embed/8MEd5muwtX4?autoplay=1'
+    'https://www.youtube.com/embed/pLRFhTW7_Iw'
   );
   iframe.setAttribute('allowfullscreen', '');
   videoContainer.innerHTML = '';
