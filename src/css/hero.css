@@ -1,219 +1,251 @@
 .hero .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-img {
-    display: block;
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-mob.jpg);
-    max-width: 335px;
-    width: 100%;
-    border-radius: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: block;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(/img/hero/chocolate-covered-mob.jpg);
+  max-width: 335px;
+  width: 100%;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero .hero-img {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-mob@2x.jpg);
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero .hero-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/chocolate-covered-mob@2x.jpg);
+  }
 }
 
 .hero-blocks {
-    padding-top: 395px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+  padding-top: 395px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .hero-blocks-text {
-    max-width: 290px;
-    width: 100%;
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--background-secondary-color);
-    text-transform: none;
-    text-align: left;
+  max-width: 290px;
+  width: 100%;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--background-secondary-color);
+  text-transform: none;
+  text-align: left;
 
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .hero-btnsscroll-btns {
-    display: flex;
-    gap: 14px;
-    margin-bottom: 32px;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
 
-    font-weight: 600;
-    line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .btnsscroll-btns-click-buy {
-    font-weight: 600;
-    padding: 12px 28px;
-    border-radius: 100px;
-    border: none;
-    color: var(--background-secondary-color);
-    background: var(--accent-color);
-    transition: color var(--hover-transition), background var(--hover-transition);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 100px;
+  border: none;
+  color: var(--background-secondary-color);
+  background: var(--accent-color);
+  transition: color var(--hover-transition), background var(--hover-transition);
 }
 
 .btnsscroll-btns-click-buy:focus {
-    color: var(--accent-color);
-    background: var(--accent-hover-color);
+  color: var(--accent-color);
+  background: var(--accent-hover-color);
 }
 
 .btnsscroll-btns-section {
-    color: var(--background-secondary-color);
-    padding: 12px 28px;
-    border: 1px solid var(--background-secondary-color);
-    border-radius: 100px;
-    transition: color var(--hover-transition), border var(--hover-transition);
+  color: var(--background-secondary-color);
+  padding: 12px 28px;
+  border: 1px solid var(--background-secondary-color);
+  border-radius: 100px;
+  transition: color var(--hover-transition), border var(--hover-transition);
 }
 
 .btnsscroll-btns-section:focus {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-}
-
-.hero-btnsscroll-btn {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-}
-
-.btnsscroll-btn-scroll-text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.03em;
-    color: var(--background-secondary-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .scroll-down-link {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--background-secondary-color);
-    fill: var(--accent-color);
-    transition: fill var(--hover-transition), background var(--hover-transition);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--background-secondary-color);
+
+  border-radius: 50%;
+  transition: color var(--hover-transition), scroll var(--hover-transition);
 }
 
 .scroll-down-link-icon {
-    width: 16px;
-    height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  fill: var(--accent-color);
+  background-color: var(--background-secondary-color);
+  transition: fill var(--hover-transition),
+    background-color var(--hover-transition);
 }
 
-.scroll-down-link:focus {
-    background: var(--accent-color);
-    fill: var(--background-secondary-color);
+.scroll-down-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.scroll-down-link:is(:hover, :focus) .scroll-down-link-icon {
+  background-color: var(--accent-color);
+  fill: var(--background-secondary-color);
+}
+
+.scroll-down-link-icon > svg {
+  width: 16px;
+  height: 16px;
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
-        padding-bottom: 50px;
-    }
+  .hero {
+    padding-bottom: 50px;
+  }
 
-    .hero .hero-img {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-tablet.jpg);
-        max-width: 704px;
-    }
+  .hero .hero-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/chocolate-covered-tablet.jpg);
+    max-width: 704px;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero .hero-img {
-            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-tablet@2x.jpg);
-        }
+    .hero .hero-img {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(/img/hero/chocolate-covered-tablet@2x.jpg);
     }
+  }
 
-    .hero-blocks {
-        padding-top: 670px;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-    }
+  .hero-blocks {
+    padding-top: 670px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
 
-    .hero-blocks-text {
-        font-size: 28px;
-        line-height: 1.21;
-        max-width: 482px;
-    }
+  .hero-blocks-text {
+    font-size: 28px;
+    line-height: 1.21;
+    max-width: 482px;
+  }
 
-    .hero-btnsscroll {
-        display: flex;
-        justify-content: space-between;
-    }
+  .hero-btnsscroll {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .hero-btnsscroll-btns {
-        margin-bottom: 0;
-    }
+  .hero-btnsscroll-btns {
+    margin-bottom: 0;
+  }
 
-    .btnsscroll-btns-click-buy {
-        padding: 14px 40px;
-    }
+  .btnsscroll-btns-click-buy {
+    padding: 14px 40px;
+  }
 
-    .btnsscroll-btns-section {
-        padding: 14px 40px;
-    }
+  .btnsscroll-btns-section {
+    padding: 14px 40px;
+  }
 
-    .btnsscroll-btn-scroll-text {
-        font-size: 14px;
-        line-height: 1.28;
-    }
+  .scroll-down-link {
+    gap: 14px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
 
-    .scroll-down-link {
-        width: 38px;
-        height: 38px;
-    }
+  .scroll-down-link-icon {
+    width: 38px;
+    height: 38px;
+  }
 
-    .scroll-down-link-icon {
-        width: 22px;
-        height: 22px;
-    }
+  .scroll-down-link-icon > svg {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hero {
-        padding-bottom: 72px;
-    }
+  .hero {
+    padding-bottom: 72px;
+  }
 
-    .hero .hero-img {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-desktop.jpg);
-        max-width: 1136px;
-    }
+  .hero .hero-img {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/chocolate-covered-desktop.jpg);
+    max-width: 1136px;
+  }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .hero .hero-img {
-            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/img/hero/chocolate-covered-desktop@2x.jpg);
-        }
+    .hero .hero-img {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(/img/hero/chocolate-covered-desktop@2x.jpg);
     }
+  }
 
-    .hero-blocks {
-        padding-top: 380px;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-    }
+  .hero-blocks {
+    padding-top: 380px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
 
-    .btnsscroll-btns-click-buy:hover {
-        color: var(--accent-color);
-        background: var(--accent-hover-color);
-    }
+  .btnsscroll-btns-click-buy:hover {
+    color: var(--accent-color);
+    background: var(--accent-hover-color);
+  }
 
-    .btnsscroll-btns-section:hover {
-        color: var(--accent-color);
-        border: 1px solid var(--accent-color);
-    }
-
-    .scroll-down-link:hover {
-        background: var(--accent-color);
-        fill: var(--background-secondary-color);
-    }
+  .btnsscroll-btns-section:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
 }
