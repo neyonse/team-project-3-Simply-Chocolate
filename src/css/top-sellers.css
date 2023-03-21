@@ -40,7 +40,7 @@
 
 .top-sellers-item-text {
   margin-top: 20px;
-  width: 306px;
+  max-width: 306px;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
