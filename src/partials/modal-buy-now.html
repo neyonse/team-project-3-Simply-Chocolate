@@ -139,32 +139,28 @@
       </li>
     </ul>
     <form class="buy-now-modal-form">
-      <label class="buy-now-label">
+      <label class="buy-now-first">
         <span class="buy-now-label-title">Personal information</span>
-        <ul class="buy-now-for-input">
-          <li>
-            <input
-              type="text"
-              name="user_name"
-              required
-              class="buy-now-label-input buy-now-first"
-              placeholder="Name"
-              pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-              minlength="2"
-            />
-          </li>
-          <li>
-            <input
-              type="text"
-              name="user_surname"
-              required
-              class="buy-now-label-input buy-now-label-input-second"
-              placeholder="Surname"
-              pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
-              minlength="2"
-            />
-          </li>
-        </ul>
+        <input
+          type="text"
+          name="user_name"
+          required
+          class="buy-now-label-input"
+          placeholder="Name"
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
+      </label>
+      <label class="buy-now-label">
+        <input
+          type="text"
+          name="user_surname"
+          required
+          class="buy-now-label-input buy-now-label-input-second"
+          placeholder="Surname"
+          pattern="^[a-zA-Zа-яА-Яі-Ії-Ї]+$"
+          minlength="2"
+        />
       </label>
       <label class="buy-now-label">
         <span class="buy-now-label-title">Email</span>
@@ -188,19 +184,19 @@
             class="buy-now-label-input buy-now-label-input-phone buy-now-label-input-three"
             placeholder="Phone number"
           />
-          <div class="buy-now-phone-decor">
+          <span class="buy-now-phone-decor">
             <svg class="buy-now-label-icon">
               <use href="/img/icons.svg#ua-flag"></use>
             </svg>
             <span class="buy-now-label-phone-number">+380</span>
-          </div>
+          </span>
         </span>
       </label>
       <label class="buy-now-label">
         <span class="buy-now-label-title">Card number</span>
         <span class="buy-now-label-input-cards">
           <input
-            type="number"
+            type="tel"
             name="user-card"
             required
             pattern="^[0-9]{12}"
