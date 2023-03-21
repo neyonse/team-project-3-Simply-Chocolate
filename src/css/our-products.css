@@ -1,4 +1,5 @@
 .products-main {
+  margin-bottom: 32px;
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
@@ -12,14 +13,27 @@
   color: var(--accent-color);
 }
 
-.products-list-item {
-  max-width: 335px;
-  max-height: 364px;
+.our-products-slider .slick-list {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.our-products-slider .slick-track {
+  display: flex;
+  gap: 18px;
+}
+
+.our-products-slider .slick-dots {
+  max-width: 210px;
+}
+
+.products-item {
+  width: 335px;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 53px;
   padding-right: 52px;
-  margin-top: 32px;
   background: var(--background-secondary-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -33,23 +47,17 @@
   height: auto;
 }
 
-.products .choco-unit {
-}
-
 .products-title {
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
+  line-height: 1.33;
   text-transform: uppercase;
-  color: var(--text-main-color);
   text-align: center;
 }
+
 .products-description {
-  font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
-  letter-spacing: -0.02em;
+  line-height: 1.17;
   color: rgba(17, 17, 17, 0.7);
   text-align: center;
   margin-bottom: 18px;
@@ -59,64 +67,33 @@
   display: block;
   margin: 0 auto;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  line-height: 1.22;
+  padding: 8px 20px;
   color: var(--text-main-color);
-  width: 94px;
   height: 33px;
-  background: var(--background-secondary-color);
+  background: var(--background-main-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   text-align: center;
 }
 
-/* SWIPER */
-.container-products .swiper {
-  max-width: 335px;
-  height: 397px;
-}
-
-.container-products .swiper-pagination {
-  bottom: 0;
-  line-height: 0;
-}
-
-.container-products .swiper-pagination-bullet {
-  width: 13px;
-  height: 13px;
-}
-
-.container-products .swiper-pagination-bullet-active {
-  width: 28px;
-  border-radius: 10px;
-  background-color: var(--accent-color);
-}
-
 /* Adaptation Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .products h2 {
+@media screen and (min-width: 768px) {
+  .products-main {
     margin-bottom: 50px;
   }
 
-  .container-products .swiper {
-    max-width: 704px;
-    height: 409px;
+  .our-products-slider .slick-list {
+    margin-bottom: 32px;
   }
 
-  .products-list-item {
-    max-width: 270px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .products-item {
+    width: 270px;
+    padding: 32px 20px;
   }
 }
 
 /* Adaptation Desktop */
-@media screen and (min-width:1200) {
-  .container-products .swiper {
-    max-width:1136px;
-  }
-
+@media screen and (min-width: 1200) {
 }
