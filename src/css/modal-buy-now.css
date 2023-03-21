@@ -148,13 +148,7 @@
   max-width: 24px;
   max-height: 24px;
 }
-/* .buy-now-line {
-  width: 1.5px;
-  height: 25px;
-  max-height: 100%;
-  background-color: rgba(64, 64, 64, 0.3);
-  margin-left: 9px;
-} */
+
 .buy-now-label-phone-number {
   font-weight: 500;
   font-size: 14px;
@@ -251,41 +245,7 @@
     max-width: 100%;
     max-height: 100%;
   }
-  /* ====крапочки====== */
-
-  /* =========================================== */
-
-  .buy-now-swiper-pagination {
-    position: absolute;
-    top: 359px;
-    left: 50%;
-  }
-  .buy-now-slider-container .swiper-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 13px;
-    position: absolute;
-    text-align: center;
-    transition: 0.3s opacity;
-    transform: translate3d(0, 0, 0);
-    z-index: 10;
-  }
-
-  .buy-now-slider-container .swiper-pagination-bullet {
-    font-size: 0;
-    width: 13px;
-    height: 13px;
-    background-color: rgba(17, 17, 17, 0.1);
-    border-radius: 50%;
-    border: none;
-  }
-  .swiper-pagination-bullet-active {
-    width: 28px;
-    height: 13px;
-    background-color: var(--accent-color);
-    border-radius: 15px;
-  }
+ 
 }
 
 @media screen and (min-width: 768px) {
