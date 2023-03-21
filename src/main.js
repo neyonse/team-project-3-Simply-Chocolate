@@ -10,9 +10,8 @@ import './js/modal-feedback';
 
 import './js/modal-buy-now';
 
-// import './js/slick.min';
-// import './js/slick-slider-buy-now';
-// import './js/slick-slider-our-products';
-// import './js/slick-slider-reviews';
+import './js/slick-slider-buy-now';
+import './js/slick-slider-our-products';
+import './js/slick-slider-reviews';
 
 // import './js/how-its-made';
