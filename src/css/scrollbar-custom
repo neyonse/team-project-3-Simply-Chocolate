@@ -1,0 +1,19 @@
+/*  Firefox */
+* {
+  scrollbar-width: 8px;
+  scrollbar-color: var(--background-main-color) var(--accent-color);
+}
+/*  Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background-main-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
