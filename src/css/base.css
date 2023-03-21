@@ -23,6 +23,10 @@ body {
   background-color: var(--background-main-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 375px;
   padding: 0 20px;
