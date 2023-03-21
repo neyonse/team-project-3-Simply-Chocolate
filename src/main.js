@@ -12,4 +12,4 @@ import './js/swiper-products';
 
 import './js/modal-buy-now';
 
-// import './js/how-its-made';
+import './js/how-its-made';
