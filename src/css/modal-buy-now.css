@@ -24,7 +24,7 @@
 .buy-now-modal {
   position: relative;
   margin: 0 auto;
-  width: 311px;
+
   max-width: 100%;
   background: var(--background-main-color);
   border-radius: 15px;
@@ -69,7 +69,6 @@
 .buy-now-modal-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 18px;
 }
 .buy-now-slider-text {
   padding: 8px 29px;
@@ -126,9 +125,7 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
-.buy-now-first {
-  margin-bottom: 14px;
-}
+
 .buy-now-phone-decor {
   display: flex;
   flex-direction: row;
@@ -225,7 +222,9 @@
   .buy-now-image-container {
     display: none;
   }
-
+  .buy-now-modal {
+    width: 311px;
+  }
   .buy-now-slider-container {
     width: 231px;
     max-width: 100%;
@@ -245,17 +244,26 @@
     max-width: 100%;
     max-height: 100%;
   }
- 
 }
 
 @media screen and (min-width: 768px) {
   .buy-now-modal {
-    width: 609px;
+    max-width: 609px;
+
     padding: 48px;
     margin: 0 auto;
     height: 1058px;
   }
-
+  .buy-now-first {
+    margin-bottom: 14px;
+  }
+  .tablet-image {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 40px;
+    gap: 16px;
+  }
   .buy-now-slider-container {
     display: none;
   }
@@ -263,8 +271,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
-    gap: 16px;
   }
   .buy-now-picture-container {
     background: inherit;
