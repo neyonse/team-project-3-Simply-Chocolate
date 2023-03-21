@@ -290,7 +290,7 @@
     height: 66px;
     max-height: 100%;
     padding: 22px 24px;
-    font-size: 1;
+    font-size: 18px;
   }
   .buy-now-first {
     width: 246px;
@@ -343,6 +343,7 @@
   .buy-now-message {
     padding: 22px 24px;
     height: 137px;
+    font-size: 18px;
   }
   .buy-now-btn-submit {
     padding: 14px 40px;
