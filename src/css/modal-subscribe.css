@@ -157,7 +157,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-subscribe {
-    max-width: 538px;
+    width: 538px;
   }
 
   .modal-subscribe-image {
