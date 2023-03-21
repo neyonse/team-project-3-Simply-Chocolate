@@ -121,9 +121,7 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
-.buy-now-first {
-  margin-bottom: 14px;
-}
+
 .buy-now-phone-decor {
   display: flex;
   flex-direction: row;
@@ -245,9 +243,15 @@
   .buy-now-slider {
     display: none;
   }
-
+  .buy-now-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
   .buy-now-modal {
     width: 609px;
+    max-width: 100%;
     padding: 48px;
     margin: 0 auto;
     height: 1058px;
@@ -290,6 +294,13 @@
     max-height: 100%;
     padding: 22px 24px;
     font-size: 18px;
+
+  }
+  .buy-now-inputs {
+    display: flex;
+    margin-bottom: 18px;
+    gap: 21px;
+
   }
   .buy-now-first {
     width: 246px;
