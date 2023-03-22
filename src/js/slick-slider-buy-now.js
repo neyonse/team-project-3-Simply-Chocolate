@@ -4,6 +4,8 @@ $(document).ready(function () {
     dots: true,
     variableWidth: true,
     speed: 1000,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
+  autoplaySpeed: 3000,
   });
 });
