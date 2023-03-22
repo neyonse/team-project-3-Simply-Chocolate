@@ -220,6 +220,25 @@
 }
 
 /* Mobile Slider styles */
+@media screen and (max-width: 320px) {
+  .buy-now-modal {
+    width: calc(100% - 30px);
+  }
+
+  .buy-now-label-input {
+    max-width: 263px;
+    width: 100%;
+  }
+
+  .buy-now-list {
+    max-width: 200px;
+  }
+
+  .buy-now-item {
+    max-width: 200px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .buy-now-slider {
     width: 231px;
@@ -232,6 +251,7 @@
   }
   .buy-now-inputs {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 14px;
     margin-bottom: 18px;

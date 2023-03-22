@@ -72,6 +72,12 @@
 
 /* ____________ADAPTIV REVIEW MODAL TABLET/DESCTOP_______________ */
 
+@media screen and (max-width: 320px) {
+  .review-modal {
+    width: calc(100% - 30px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .review-modal {
     width: 517px;

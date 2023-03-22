@@ -145,6 +145,12 @@
   background-color: var(--accent-hover-color);
 }
 
+@media screen and (max-width: 320px) {
+  .modal-subscribe {
+    width: calc(100% - 30px);
+  }
+}
+
 @media screen and (max-width: 767px) {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
