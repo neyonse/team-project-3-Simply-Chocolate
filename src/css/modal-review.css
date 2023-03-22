@@ -51,7 +51,8 @@
 .review-modal h2 {
   line-height: 1.2;
   text-align: left;
-  max-width: 230px;
+  width: 255px;
+  max-width: 100%;
 }
 
 .review-modal .buy-now-title-accent {
@@ -86,7 +87,8 @@
   }
 
   .review-modal h2 {
-    max-width: 298px;
+    width: 298px;
+    max-width: 100%;
     font-size: 24px;
     line-height: 1.16;
   }
