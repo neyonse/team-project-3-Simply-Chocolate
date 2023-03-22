@@ -33,7 +33,7 @@
   transition: transform var(--hover-transition);
 }
 .buy-now-btn-close {
-  background-color: inherit;
+  background-color: transparent;
   border: none;
 
   display: flex;
