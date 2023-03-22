@@ -69,10 +69,6 @@
   height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
-.how-icon {
-  width: 14px;
-  height: 15px;
-}
 .how-btm {
   position: absolute;
   top: 50%;
@@ -85,7 +81,16 @@
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid var(--background-secondary-color);
+  transition: transform var(--hover-transition);
 }
+.how-icon {
+  width: 14px;
+  height: 15px;
+}
+.video-container:is(:hover, :focus) .how-btm {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
 @media screen and (min-width: 768px) {
   .how-container {
     max-width: 768px;
