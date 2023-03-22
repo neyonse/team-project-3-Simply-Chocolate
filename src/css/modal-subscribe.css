@@ -64,6 +64,7 @@
 
 .modal-subscribe-close-button:is(:hover, :focus) {
   transform: scale(1.4);
+  color: var(--accent-color);
 }
 
 .modal-subscribe-image {

@@ -160,7 +160,7 @@
 }
 .header-btn-close:hover .heder-close-icon,
 .header-btn-close:focus .heder-close-icon {
-  transform: scale(1.43);
+  transform: scale(1.2);
   stroke: var(--accent-color);
 }
 .heder-close-icon {

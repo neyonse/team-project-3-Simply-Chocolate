@@ -43,11 +43,18 @@
   position: absolute;
   top: 14px;
   right: 14px;
+
+  color: var(--text-main-color);
+  transition: color var(--hover-transition), transform var(--hover-transition);
 }
 .buy-now-icon-close {
   width: 24px;
   height: 24px;
-  stroke: var(--text-main-color);
+  stroke: currentColor;
+}
+.buy-now-btn-close:is(:hover, :focus) {
+  transform: scale(1.4);
+  color: var(--accent-color);
 }
 .buy-now-title {
   font-weight: 600;
