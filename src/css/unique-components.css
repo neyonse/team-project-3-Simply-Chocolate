@@ -55,7 +55,6 @@
   padding-top: 28px;
   padding-bottom: 71px;
   width: 224px;
-  max-width: 100%;
 }
 .components-title {
   position: absolute;
@@ -207,10 +206,6 @@
   .components-order-two {
     order: 3;
   }
-  .components-images {
-    max-width: 224px;
-    max-width: 100%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -242,6 +237,5 @@
   }
   .components-images {
     width: 206px;
-    max-width: 100%;
   }
 }
