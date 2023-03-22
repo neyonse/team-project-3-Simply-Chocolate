@@ -68,7 +68,6 @@
 
 .modal-subscribe-image {
   display: block;
-  width: 311px;
   height: 169px;
   background-image: url(/img/modal/modal-subscribe/subscribe-mobile.jpg);
   background-color: var(--background-dark-color);
